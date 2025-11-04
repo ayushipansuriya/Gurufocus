@@ -1,11 +1,15 @@
-2025-11-04 14:36:12,535 [INFO] Downloading portfolio 300594 ...
-2025-11-04 14:36:14,604 [INFO] Excluded 0 stocks with YTD=0 and 1Y=0.
-2025-11-04 14:36:15,498 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Repeated_Ticker_guru_portfolio.xlsx
-2025-11-04 14:36:15,498 [INFO] Downloading portfolio 300595 ...
-2025-11-04 14:36:18,965 [INFO] Excluded 4 stocks with YTD=0 and 1Y=0.
-2025-11-04 14:36:20,389 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Single_Ticker_guru_portfolio.xlsx
-2025-11-04 14:36:20,389 [INFO] Downloading portfolio 296771 ...
-2025-11-04 14:36:21,267 [INFO] Excluded 1 stocks with YTD=0 and 1Y=0.
-2025-11-04 14:36:21,543 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Main_guru_portfolio.xlsx
-2025-11-04 14:36:24,413 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Combined_guru_portfolio.xlsx
-2025-11-04 14:36:24,414 [INFO] ✅ Combined portfolio saved → D:\Gurufocus\Final_File\Combined_guru_portfolio.xlsx
+2025-11-04 17:01:43,369 [INFO] Downloading portfolio 300594 ...
+2025-11-04 17:01:45,725 [INFO] Excluded 0 stocks with YTD=0 and 1Y=0.
+2025-11-04 17:01:46,700 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Repeated_Ticker_guru_portfolio.xlsx
+2025-11-04 17:01:46,700 [INFO] Downloading portfolio 300595 ...
+2025-11-04 17:01:50,088 [INFO] Excluded 4 stocks with YTD=0 and 1Y=0.
+2025-11-04 17:01:51,665 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Single_Ticker_guru_portfolio.xlsx
+2025-11-04 17:01:51,665 [INFO] Downloading portfolio 296771 ...
+2025-11-04 17:01:52,518 [INFO] Excluded 1 stocks with YTD=0 and 1Y=0.
+2025-11-04 17:01:52,762 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Main_guru_portfolio.xlsx
+2025-11-04 17:01:55,729 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Combined_guru_portfolio.xlsx
+2025-11-04 17:01:55,730 [INFO] ✅ Combined portfolio saved → D:\Gurufocus\Final_File\Combined_guru_portfolio.xlsx
+2025-11-04 17:01:57,213 [INFO] ✅ Momentum Ranking Done. Wrote: Final_File\Repeated_Portfolio_Momentum_Ranking.xlsx
+2025-11-04 17:01:58,206 [INFO] ✅ Momentum Ranking Done. Wrote: Final_File\Single_Portfolio_Momentum_Ranking.xlsx
+2025-11-04 17:01:58,593 [INFO] ✅ Momentum Ranking Done. Wrote: Final_File\Main_Portfolio_Momentum_Ranking.xlsx
+2025-11-04 17:01:59,871 [INFO] ✅ Momentum Ranking Done. Wrote: Final_File\Combined_Portfolio_Momentum_Ranking.xlsx

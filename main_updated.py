@@ -1429,7 +1429,7 @@ async def test_main():
     # # main_path = "Final_File/Main_guru_portfolio.xlsx"
     # # combined_path = "Final_File/Combined_guru_portfolio.xlsx"
     #
-    # run_all_momentum_rankings(repeated_path, single_path, main_path, combined_path)
+    run_all_momentum_rankings(repeated_path, single_path, main_path, combined_path)
 
 if __name__ == "__main__":
     # asyncio.run(main())
