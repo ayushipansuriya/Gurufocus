@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GuruFocus Portfolio Dashboard</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h2>GuruFocus Portfolio Automation</h2>
+
+    <div class="flow">
+        <div class="step-container">
+            <div id="step1" class="step">Step 1</div>
+            <div class="desc">1.Download Top-Holdings file.<br>2.identify ticker & create portfolio</div>
+        </div>
+
+        <div class="line" id="line1"></div>
+
+        <div class="step-container">
+            <div id="step2" class="step">Step 2</div>
+            <div class="desc">1.Calculate the rank</div>
+        </div>
+
+        <div class="line" id="line2"></div>
+
+        <div class="step-container">
+            <div id="step3" class="step">Step 3</div>
+            <div class="desc">1.Calculate momentum ranking</div>
+        </div>
+    </div>
+
+    <button id="startBtn" onclick="startProcess()">▶ Start Process</button>
+    <button id="downloadBtn" onclick="window.location.href='/download'">⬇ Download File</button>
+
+    <p id="status">Status: Waiting...</p>
+
+
+
+ <script>
+        async function startProcess() {
+            document.getElementById("startBtn").disabled = true;
+            const status = document.getElementById("status");
+
+            status.textContent = "Status: Running...";
+
+            // reset colors before run
+            ["step1","step2","step3"].forEach(id => {
+                document.getElementById(id).className = "step";
+            });
+
+            try {
+                // Call backend (run_process route)
+                const res = await fetch("/run_process");
+                const data = await res.json();
+
+                // Simulate step-by-step update based on backend response
+                if (data.step1 === "success") {
+                    document.getElementById("step1").classList.add("success");
+                    status.textContent = "Step 1 Completed!";
+                } else {
+                    document.getElementById("step1").classList.add("fail");
+                    throw new Error("Step 1 failed");
+                }
+                await new Promise(r => setTimeout(r, 1500));
+
+                if (data.step2 === "success") {
+                    document.getElementById("step2").classList.add("success");
+                    status.textContent = "Step 2 Completed!";
+                } else {
+                    document.getElementById("step2").classList.add("fail");
+                    throw new Error("Step 2 failed");
+                }
+                await new Promise(r => setTimeout(r, 1500));
+
+                if (data.step3 === "success") {
+                    document.getElementById("step3").classList.add("success");
+                    status.textContent = "Step 3 Completed!";
+                } else {
+                    document.getElementById("step3").classList.add("fail");
+                    throw new Error("Step 3 failed");
+                }
+
+                status.textContent = "✅ All steps completed successfully!";
+                document.getElementById("downloadBtn").style.display = "inline-block";
+            } catch (err) {
+                status.textContent = `❌ ${err.message}`;
+            }
+
+            document.getElementById("startBtn").disabled = false;
+        }
+    </script>
+
+</body>
+</html>

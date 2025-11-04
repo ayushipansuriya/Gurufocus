@@ -1,0 +1,243 @@
+/* =========================
+   General Page Style
+========================= */
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #dae4f5, #f0f2f5);
+    text-align: center;
+    height: 96vh;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   Header
+========================= */
+h2 {
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    font-size: 28px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Step Flow Layout
+========================= */
+.flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 50px 60px;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+/* Each step container */
+.step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+/* Step circle */
+.step {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Step descriptions */
+.desc {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 8px 10px;
+    width: 90%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Connecting line between circles */
+.line {
+    flex: 1;
+    height: 4px;
+    background-color: #b0b0b0;
+    margin: 0 10px;
+    transform: translateY(-30px);
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* ✅ Green for success */
+.success {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+/* ❌ Red for failure */
+.fail {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+/* =========================
+   Buttons
+========================= */
+button {
+    background: linear-gradient(90deg, #007bff, #0056d8);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background: #bbb;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Download Button */
+#downloadBtn {
+    display: none;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #4CAF50, #3d8e41);
+}
+
+/* Status text */
+#status {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #222;
+    font-size: 16px;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+    .flow {
+        margin: 40px 20px;
+        flex-wrap: wrap;
+    }
+
+    .step {
+        width: 90px;
+        height: 90px;
+        font-size: 18px;
+    }
+
+    .desc {
+        font-size: 13px;
+        width: 80%;
+    }
+
+    .line {
+        width: 80px;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile Landscape (≤ 768px) */
+@media (max-width: 768px) {
+    .flow {
+        flex-direction: column;
+        gap: 30px;
+        margin: 30px auto;
+    }
+
+    .line {
+        width: 4px;
+        height: 50px;
+        margin: 10px 0;
+        transform: translateY(0);
+    }
+
+    .step {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .desc {
+        font-size: 13px;
+        width: 85%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+}
+
+/* Mobile Portrait (≤ 480px) */
+@media (max-width: 480px) {
+    body {
+        height: auto;
+        padding: 20px;
+    }
+
+    .flow {
+        margin: 20px auto;
+        gap: 35px;
+    }
+
+    .step {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+        margin-top:-20px;
+    }
+
+    .desc {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    #status {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <form method="post" action="/login">
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Email address" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="options">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+
+        </form>
+        <script>
+       const error = document.querySelector('.error');
+       if (error) {
+            setTimeout(() => error.style.display = 'none', 2000);
+       }
+    </script>
+
+    </div>
+</body>
+</html>
