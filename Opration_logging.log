@@ -1,0 +1,11 @@
+2025-11-04 14:36:12,535 [INFO] Downloading portfolio 300594 ...
+2025-11-04 14:36:14,604 [INFO] Excluded 0 stocks with YTD=0 and 1Y=0.
+2025-11-04 14:36:15,498 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Repeated_Ticker_guru_portfolio.xlsx
+2025-11-04 14:36:15,498 [INFO] Downloading portfolio 300595 ...
+2025-11-04 14:36:18,965 [INFO] Excluded 4 stocks with YTD=0 and 1Y=0.
+2025-11-04 14:36:20,389 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Single_Ticker_guru_portfolio.xlsx
+2025-11-04 14:36:20,389 [INFO] Downloading portfolio 296771 ...
+2025-11-04 14:36:21,267 [INFO] Excluded 1 stocks with YTD=0 and 1Y=0.
+2025-11-04 14:36:21,543 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Main_guru_portfolio.xlsx
+2025-11-04 14:36:24,413 [INFO] ✅ Final analysis Excel with ranking saved to D:\Gurufocus\Final_File\Combined_guru_portfolio.xlsx
+2025-11-04 14:36:24,414 [INFO] ✅ Combined portfolio saved → D:\Gurufocus\Final_File\Combined_guru_portfolio.xlsx
