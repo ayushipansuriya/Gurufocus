@@ -3,7 +3,7 @@
   "version": 2,
   "functions": {
     "view.py": {
-      "runtime": "python3.11",
+      "runtime": "vercel-python@3.9",
       "excludeFiles": "{tests/**,__tests__/**,**/*.test.py,**/test_*.py,fixtures/**,__fixtures__/**,static/**,assets/**,media/**,node_modules/**,__pycache__/**}"
     }
   },
