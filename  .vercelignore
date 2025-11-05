@@ -3,6 +3,5 @@ venv
 __pycache__/
 *.py[cod]
 node_modules/
-static/
 media/
 tests/

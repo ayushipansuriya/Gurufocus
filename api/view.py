@@ -95,7 +95,7 @@ async def run_process():
 
 @app.get("/download")
 async def download_all_files():
-    folder_path = Path("Final_File")
+    folder_path = Path("../Final_File")
 
     # Create timestamp for unique filename
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -124,5 +124,3 @@ async def logout():
     return response
 
 
-if __name__ == "__main__":
-    uvicorn.run("view:app", host="127.0.0.1", port=8000, reload=True)
