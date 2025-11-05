@@ -1,12 +1,9 @@
 import asyncio
+from playwright.async_api import Playwright, async_playwright, TimeoutError as PlaywrightTimeoutError
 import csv
-from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
+
 
 OUTPUT_CSV = "tradingview_symbols.csv"
-
-
-import asyncio
-from playwright.async_api import Playwright, async_playwright, TimeoutError as PlaywrightTimeoutError
 
 
 async def load_all_rows(page):

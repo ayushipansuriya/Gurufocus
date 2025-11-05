@@ -1,5 +1,11 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
+  "functions": {
+    "**/*.py": {
+      "excludeFiles": "{tests/**,__tests__/**,**/*.test.py,**/test_*.py,fixtures/**,__fixtures__/**,static/**,assets/**,media/**,node_modules/**,__pycache__/**}"
+    }
+  },
   "builds": [
     {
       "src": "view.py",
